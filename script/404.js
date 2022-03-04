@@ -1,6 +1,6 @@
 var app;
 var title = document.getElementById('title');
-var cc1 = window.location.href.lastIndexOf("#");
+var cc1 = window.location.href.lastIndexOf("/");
 var cc2 = cc1 + 1;
 if (cc2 > 2) {
     var cc3 = window.location.href.slice(cc2);
