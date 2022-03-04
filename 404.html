@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+	<title>Redrecting...</title>
+	<meta name="description" content="Minimal URL is a modern URL shortener with support for custom alias">
+	<link rel="icon" href="icon/url.ico">
+	<!-- Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+	<main class="main">
+		<div id="erbox">
+			<h1>404</h1>
+			page not found
+		</div>
+		<div class="flex"></div>
+		<footer>
+			<a onclick='home()'>
+				<img src="icon/home.svg" alt="logo" style="height: 24px; margin-right: 8px;">Home
+			</a>
+		</footer>
+	</main>
+</body>
+
+<div id="load">Redirecting...</div>
+<!-- partial -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+<script src="https://qminh.xyz/script/data.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+<script  src="script/404.js"></script>
+<script>
+	function home() {
+		window.open("./#", "_self");	
+	}
+</script>
+</html>
